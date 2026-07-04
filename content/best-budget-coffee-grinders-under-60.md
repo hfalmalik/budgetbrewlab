@@ -27,7 +27,7 @@ Realistic expectations: dosing for one large mug takes about 40-50 seconds of cr
 
 **The honest downside:** it's manual, and that is either meditative or annoying depending on who you are at 6:45 AM. If you grind for two or more people daily, the cranking novelty wears off within a month. Couples should look at the electric pick or budget for a used entry-level electric burr.
 
-Get it here: [Kingrinder K2](aff:B09KXYZ1K2).
+Get it here: [Kingrinder K2](aff:B0BCKFJ5QR).
 
 ## 2. Timemore Chestnut C2 — the nicest object (~$55)
 
@@ -35,7 +35,7 @@ The C2 grinds slightly less consistently than the K2 at espresso-fine settings, 
 
 **The honest downside:** the 25g capacity is tight. A single big mug of French press is fine; brewing a full 4-cup press means grinding twice. And the grind-setting dial is under the burr, so checking your current setting means flipping the grinder over.
 
-Get it here: [Timemore Chestnut C2](aff:B08TIMC2XX).
+Get it here: [Timemore Chestnut C2](aff:B0833SDN8M).
 
 ## 3. Hario Skerton Pro — the one you can buy anywhere (~$40)
 
@@ -43,7 +43,7 @@ Hario's ceramic-burr workhorse has been the "first real grinder" for a decade, a
 
 **The honest downside:** at coarse (French press) settings the burr still wobbles slightly more than the steel-burr competition, so coarse grinds are noticeably less uniform — a real issue if French press is your main brewer. It's also the slowest cranker here. Buy it for pour-over and availability, not for press-pot perfection.
 
-Get it here: [Hario Skerton Pro](aff:B01LXZACRS).
+Get it here: [Hario Skerton Pro](aff:B01MXJI90S).
 
 ## 4. Krups GX5000 — if it must be electric (~$55)
 
@@ -51,7 +51,7 @@ Honesty first: at $55, electric burr grinders involve real compromises, and the 
 
 **The honest downsides, plural:** it is loud enough to wake housemates, it retains a gram or two of old grounds between uses (pulse it empty before dosing), and its coarsest settings are too inconsistent for great French press. If those bother you, the manual picks above are simply better grinders for the money.
 
-Get it here: [Krups GX5000](aff:B000G3L1Y2).
+Get it here: [Krups GX5000](aff:B0161Q2RUM).
 
 ## Which one should you actually buy?
 

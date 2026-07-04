@@ -28,7 +28,7 @@ The $9 **plastic Hario V60** is not the compromise pick — it is the *correct* 
 
 **The honest downside:** it looks like $9. If your kitchen is a design statement, buy the ceramic anyway and preheat it — the coffee difference is small when you do. But know that you're paying for looks, not taste.
 
-Get it here: [Hario V60 Plastic Dripper, Size 02](aff:B001RBTSMM), and the matching [Hario V60 02 filters](aff:B001O0R46I).
+Get it here: [Hario V60 Plastic Dripper, Size 02](aff:B001RBTSMM), and the matching [Hario V60 02 filters](aff:B001U7EOYA).
 
 Use the tabbed Hario papers, not the $4 no-name cones: filter paper quality is one of the few places where the cheap substitute genuinely tastes worse (papery, slow-draining, occasionally collapsing).
 
@@ -36,13 +36,13 @@ Use the tabbed Hario papers, not the $4 no-name cones: filter paper quality is o
 
 This is the part of the article where we lose people, and it's the part that matters most. Coffee is a ratio: roughly **1g coffee to 16g water**, and eyeballing either side swings your brew from sour to bitter day to day. A $12 kitchen scale with 0.1g resolution and a built-in timer removes 80% of the inconsistency in home brewing — more improvement than any $40 accessory upgrade.
 
-You do not need a $150 "smart brewing scale." You need repeatability. Any well-reviewed 0.1g scale does that: [budget 0.1g coffee scale with timer](aff:B07GS4ZL7K).
+You do not need a $150 "smart brewing scale." You need repeatability. Any well-reviewed 0.1g scale does that: [budget 0.1g coffee scale with timer](aff:B0BNL5JCVR).
 
 **The honest downside of the $12 scale:** slow response time (about a second of lag while pouring) and a plastic body that won't survive a soaking. Pour a beat slower and keep it dry; that's the whole workaround.
 
 ## The server, and the free alternative
 
-The 600ml [Hario range server](aff:B000IGOXLS) is the nicest $15 in the kit — brew sits on it, it pours cleanly, and it goes in the microwave for reheats. But a large mug or any heatproof jug does the same job at $0. Buy the server on round two if the hobby sticks.
+The 600ml [Hario range server](aff:B000P4931S) is the nicest $15 in the kit — brew sits on it, it pours cleanly, and it goes in the microwave for reheats. But a large mug or any heatproof jug does the same job at $0. Buy the server on round two if the hobby sticks.
 
 ## Do you need a gooseneck kettle? (Not yet.)
 

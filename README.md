@@ -59,7 +59,7 @@ articles as relative links like [text](other-article-slug.html).
 
 **Affiliate links** use the `aff:` scheme in markdown: `[Kingrinder K2](aff:B09KXYZ1K2)`. The build rewrites these to `https://www.amazon.com/dp/<ASIN>?tag=<your-tag>` with `rel="nofollow sponsored"` — the tag comes from `config.json`.
 
-> **IMPORTANT — placeholder ASINs:** the ASINs in the seed articles are plausible but unverified placeholders. Before (or shortly after) going live, click each product link and confirm it lands on the right product; fix any that don't. Search the content folder for `aff:` to list them all.
+> **ASINs verified 2026-07-05** against live amazon.com listings via web search (AeroPress, Bodum Chambord, Hario V60/filters/server/Skerton Pro, Kingrinder K2, Timemore C2, Krups GX5000, BAGAIL scale). Articles the daily automation writes still use plausible ASINs — spot-check those during your article skims, or rerun a verification pass periodically.
 
 ## Building locally
 
