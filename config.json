@@ -1,0 +1,12 @@
+{
+  "site_name": "BudgetBrewLab",
+  "site_tagline": "Great coffee at home without the $700 espresso tax",
+  "site_url": "https://hfalmalik.github.io/budgetbrewlab",
+  "youtube_url": "",
+  "gumroad_url": "",
+  "site_description": "BudgetBrewLab reviews budget coffee gear: grinders, pour-over kits, espresso machines, scales and accessories. Honest picks, real tradeoffs, no gold-plated portafilter nonsense.",
+  "author": "BudgetBrewLab",
+  "affiliate_tag": "CHANGEME-20",
+  "output_dir": "docs",
+  "posts_per_feed": 20
+}

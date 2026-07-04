@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{page_title}}</title>
+<meta name="description" content="{{meta_description}}">
+<link rel="canonical" href="{{canonical_url}}">
+<meta property="og:type" content="{{og_type}}">
+<meta property="og:title" content="{{page_title}}">
+<meta property="og:description" content="{{meta_description}}">
+<meta property="og:url" content="{{canonical_url}}">
+<meta property="og:site_name" content="{{site_name}}">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="application/rss+xml" title="{{site_name}} RSS" href="rss.xml">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="google-site-verification" content="kMgCAQFsehr2tfXLRFdxbNmKRB4PH5D3aFbhMxRpRoI" />
+{{jsonld}}
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Budget<span>Rig</span>Lab</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="affiliate-disclosure.html">Disclosure</a>
+      <a href="rss.xml">RSS</a>
+    </nav>
+  </div>
+  <div class="wrap">
+    <p class="disclosure-bar">As an Amazon Associate, {{site_name}} earns from qualifying purchases. Product links on this page may be affiliate links &mdash; <a href="affiliate-disclosure.html">full disclosure</a>.</p>
+  </div>
+</header>
+<main class="wrap">
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; {{year}} {{site_name}} &mdash; {{site_tagline}}.</p>
+    <p>Prices and availability change constantly; always confirm on the retailer page before buying. As an Amazon Associate we earn from qualifying purchases.</p>
+    {{footer_links}}
+    <p><a href="about.html">About</a> &middot; <a href="affiliate-disclosure.html">Affiliate Disclosure</a> &middot; <a href="sitemap.xml">Sitemap</a> &middot; <a href="rss.xml">RSS</a></p>
+  </div>
+</footer>
+</body>
+</html>
