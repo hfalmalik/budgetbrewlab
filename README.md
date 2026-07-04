@@ -75,22 +75,14 @@ Python 3.12 ARM64 is installed at `%LOCALAPPDATA%\Programs\Python\Python312-arm6
 
 ---
 
-## One-time setup checklist (owner) — ~5 minutes, same as last time
+## One-time setup checklist (owner)
 
-1. Create a new **public** GitHub repo named `budgetbrewlab` (same account as budgetriglab).
-2. Connect this folder (local repo + first commit already exist):
-   ```powershell
-   cd $HOME\OneDrive\Desktop\BrewLab
-   git remote add origin https://github.com/hfalmalik/budgetbrewlab.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. **Enable GitHub Pages:** repo → Settings → Pages → "Deploy from a branch" → Branch: `main`, Folder: `/docs` → Save. Site appears at `https://hfalmalik.github.io/budgetbrewlab/`.
-4. **Google Search Console:** add the property, verify, submit `sitemap.xml`.
-5. **Amazon Associates:** once you have the Associates account (pending for BudgetRigLab), add this site to the account's site list and put the same tag in `config.json` → `affiliate_tag`, then redeploy.
-6. **Verify placeholder ASINs** (see warning above).
-
-Until step 2 is done, the daily task still generates and commits articles locally — deploy.ps1 skips the push and says so. The day you add the remote, the next run publishes everything at once.
+1. ~~Create the public GitHub repo~~ — **DONE 2026-07-05** (`hfalmalik/budgetbrewlab`, created via the machine's cached GitHub credentials).
+2. ~~Connect and push~~ — **DONE 2026-07-05** (remote added, main pushed).
+3. ~~Enable GitHub Pages~~ — **DONE 2026-07-05** (main `/docs`; live at `https://hfalmalik.github.io/budgetbrewlab/`).
+4. ~~Verify seed-article ASINs~~ — **DONE 2026-07-05** (see note above).
+5. **Google Search Console** (still yours): add the property, verify, submit `sitemap.xml`.
+6. **Amazon Associates** (still yours): once you have the Associates account (pending for BudgetRigLab), add this site to the account's site list and put the same tag in `config.json` → `affiliate_tag`, then redeploy.
 
 ## Daily automation
 
