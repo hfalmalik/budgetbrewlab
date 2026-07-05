@@ -7,6 +7,10 @@ Set-Location $Root
 
 $LogDir = Join-Path $Root "scripts\logs"
 if (-not (Test-Path $LogDir)) { New-Item -ItemType Directory -Path $LogDir | Out-Null }
+# prune: keep the newest 60 run logs so the folder never grows unbounded
+Get-ChildItem (Join-Path $LogDir "article-*.log") -ErrorAction SilentlyContinue |
+    Sort-Object LastWriteTime -Descending | Select-Object -Skip 60 |
+    Remove-Item -Force -ErrorAction SilentlyContinue
 $Log = Join-Path $LogDir ("article-" + (Get-Date -Format "yyyy-MM-dd-HHmm") + ".log")
 
 function Log($msg) {

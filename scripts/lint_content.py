@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-BudgetRigLab content linter.
+BudgetBrewLab content linter.
 
 Checks every content/*.md (article) for:
   - 1000+ words in the body
