@@ -81,7 +81,7 @@ Python 3.12 ARM64 is installed at `%LOCALAPPDATA%\Programs\Python\Python312-arm6
 2. ~~Connect and push~~ — **DONE 2026-07-05** (remote added, main pushed).
 3. ~~Enable GitHub Pages~~ — **DONE 2026-07-05** (main `/docs`; live at `https://hfalmalik.github.io/budgetbrewlab/`).
 4. ~~Verify seed-article ASINs~~ — **DONE 2026-07-05** (see note above).
-5. **Google Search Console** (still yours): add the property, verify, submit `sitemap.xml`.
+5. ~~Google Search Console~~ — **DONE 2026-07-05** (ownership verified via META tag + Site Verification API, property added, sitemap.xml submitted).
 6. **Amazon Associates** (still yours): once you have the Associates account (pending for BudgetRigLab), add this site to the account's site list and put the same tag in `config.json` → `affiliate_tag`, then redeploy.
 
 ## Daily automation

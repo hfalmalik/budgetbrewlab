@@ -1,0 +1,14 @@
+PIN: aeropress-vs-french-press-budget-brewer.png
+Title (max 100 chars): AeroPress vs French Press - Which Budget Brewer Should You Buy in 2026?
+Description: AeroPress ($40) vs French press ($25) compared honestly - taste, cleanup, capacity, durability and cost per cup - so you buy the right one first time. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/aeropress-vs-french-press-budget-brewer.html
+
+PIN: best-budget-coffee-grinders-under-60.png
+Title (max 100 chars): Best Budget Coffee Grinders Under $60 in 2026 (The Upgrade That Matters Most)
+Description: The best coffee grinders under $60 - Kingrinder K2, Timemore C2, Hario Skerton Pro and a burr electric, ranked honestly with the downsides included. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/best-budget-coffee-grinders-under-60.html
+
+PIN: complete-pour-over-coffee-setup-under-50.png
+Title (max 100 chars): The Complete Pour-Over Coffee Setup for Under $50 (Everything You Need)
+Description: A full pour-over kit - V60 dripper, filters, scale, and server - for under $50 total, with exact street prices and the honest tradeoffs at this budget. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/complete-pour-over-coffee-setup-under-50.html

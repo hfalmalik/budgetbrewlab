@@ -63,4 +63,10 @@ Log "New article created ($CountBefore -> $CountAfter). Deploying..."
 # Build + commit + push (cmd /c for the same stderr reason)
 cmd /c "powershell -NoProfile -ExecutionPolicy Bypass -File `"$(Join-Path $PSScriptRoot 'deploy.ps1')`" >> `"$Log`" 2>&1"
 Log "deploy exited with code $LASTEXITCODE"
+
+# Render the Pinterest pin for the new article (pins\ + captions.txt refresh).
+# Failure here never fails the run - pinning is a bonus, not the pipeline.
+$Py = "$env:LOCALAPPDATA\Programs\Python\Python312-arm64\python.exe"
+cmd /c "`"$Py`" `"$(Join-Path $PSScriptRoot 'make_pins.py')`" >> `"$Log`" 2>&1"
+Log "make_pins exited with code $LASTEXITCODE (new pin + caption in pins\ - upload when convenient)"
 Log "Done."
