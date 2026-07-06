@@ -31,6 +31,19 @@ if (-not $ClaudeExe) {
 if (-not $ClaudeExe) { Log "ERROR: claude CLI not found (PATH or $env:APPDATA\Claude\claude-code)."; exit 1 }
 Log "Using claude at: $ClaudeExe"
 
+# Serialization gate: wait while another headless claude job runs — three
+# concurrent jobs starved each other to death on 2026-07-06. Max 2h, 60s polls.
+$waited = 0
+while ($waited -lt 7200) {
+    $other = Get-CimInstance Win32_Process -Filter "Name = 'claude.exe'" |
+        Where-Object { $_.CommandLine -match '\s-p(\s|$)' }
+    if (-not $other) { break }
+    if ($waited -eq 0) { Log "Another headless claude job is running (PID $($other[0].ProcessId)) - waiting..." }
+    Start-Sleep -Seconds 60; $waited += 60
+}
+if ($waited -ge 7200) { Log "WARNING: waited 2h for other claude jobs; proceeding anyway." }
+elseif ($waited -gt 0) { Log "Other job finished after $([int]($waited/60)) min - proceeding." }
+
 $CountBefore = (Get-ChildItem "$Root\content\*.md").Count
 
 $Prompt = @"
@@ -49,8 +62,17 @@ $PromptFile = Join-Path $LogDir "prompt-tmp.txt"
 [System.IO.File]::WriteAllText($PromptFile, $Prompt, (New-Object System.Text.UTF8Encoding $false))
 foreach ($attempt in 1..2) {
     Log "Starting article generation (attempt $attempt)..."
-    cmd /c "type `"$PromptFile`" | `"$ClaudeExe`" -p --permission-mode acceptEdits >> `"$Log`" 2>&1"
-    Log "claude exited with code $LASTEXITCODE"
+    # Timeout-guarded: a stalled API stream once left claude hanging for hours
+    # (2026-07-06). 30 min per attempt, then kill and let the retry run.
+    $p = Start-Process -FilePath "$env:ComSpec" -ArgumentList '/c', `
+        "type `"$PromptFile`" | `"$ClaudeExe`" -p --permission-mode acceptEdits >> `"$Log`" 2>&1" `
+        -WindowStyle Hidden -PassThru
+    if (-not $p.WaitForExit(1800000)) {
+        Log "claude attempt $attempt TIMED OUT after 30 min - killing process tree"
+        cmd /c "taskkill /T /F /PID $($p.Id)" | Out-Null
+    } else {
+        Log "claude exited with code $($p.ExitCode)"
+    }
     if ((Get-ChildItem "$Root\content\*.md").Count -gt $CountBefore) { break }
     if ($attempt -eq 1) { Log "No new article yet - retrying in 60s..."; Start-Sleep -Seconds 60 }
 }
