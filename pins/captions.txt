@@ -17,3 +17,8 @@ PIN: complete-pour-over-coffee-setup-under-50.png
 Title (max 100 chars): The Complete Pour-Over Coffee Setup for Under $50 (Everything You Need)
 Description: A full pour-over kit - V60 dripper, filters, scale, and server - for under $50 total, with exact street prices and the honest tradeoffs at this budget. #budgetcoffee #coffeegear #homebarista #coffeelover
 Link: https://hfalmalik.github.io/budgetbrewlab/complete-pour-over-coffee-setup-under-50.html
+
+PIN: how-to-make-cold-brew-coffee-at-home-under-30.png
+Title (max 100 chars): How to Make Great Cold Brew Coffee at Home for Under $30 (Step-by-Step)
+Description: A complete step-by-step cold brew guide - the cheap gear, the exact coffee-to-water ratio, grind size, steep time, and the honest mistakes to avoid. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/how-to-make-cold-brew-coffee-at-home-under-30.html
