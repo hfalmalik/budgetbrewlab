@@ -22,3 +22,8 @@ PIN: how-to-make-cold-brew-coffee-at-home-under-30.png
 Title (max 100 chars): How to Make Great Cold Brew Coffee at Home for Under $30 (Step-by-Step)
 Description: A complete step-by-step cold brew guide - the cheap gear, the exact coffee-to-water ratio, grind size, steep time, and the honest mistakes to avoid. #budgetcoffee #coffeegear #homebarista #coffeelover
 Link: https://hfalmalik.github.io/budgetbrewlab/how-to-make-cold-brew-coffee-at-home-under-30.html
+
+PIN: moka-pot-vs-espresso-machine-budget.png
+Title (max 100 chars): Moka Pot vs Espresso Machine - Can a $35 Pot Replace a $200 Machine in 2026?
+Description: Moka pot vs espresso machine compared honestly - crema, strength, cost, effort and cleanup - so you know whether the $35 stovetop pot really replaces the machine. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/moka-pot-vs-espresso-machine-budget.html
