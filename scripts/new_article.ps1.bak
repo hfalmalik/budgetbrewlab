@@ -19,15 +19,6 @@ function Log($msg) {
     Write-Output $line
 }
 
-# One-line failure alert into the EmpireHQ portfolio alert file; never fatal.
-function Alert($msg) {
-    try {
-        $stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
-        Add-Content -Path "C:\Users\hfalm\OneDrive\Desktop\EmpireHQ\alerts.log" `
-            -Value "$stamp | BrewLab | $msg" -Encoding UTF8 -ErrorAction Stop
-    } catch {}
-}
-
 # Locate the Claude Code CLI: PATH first, then the desktop app's bundled copy (any version).
 $ClaudeExe = $null
 $cmd = Get-Command claude -ErrorAction SilentlyContinue
@@ -37,7 +28,7 @@ if (-not $ClaudeExe) {
         Sort-Object { [version]($_.Directory.Name -replace '[^\d.]','') } -Descending
     if ($candidates) { $ClaudeExe = $candidates[0].FullName }
 }
-if (-not $ClaudeExe) { Log "ERROR: claude CLI not found (PATH or $env:APPDATA\Claude\claude-code)."; Alert "daily article run failed: claude CLI not found"; exit 1 }
+if (-not $ClaudeExe) { Log "ERROR: claude CLI not found (PATH or $env:APPDATA\Claude\claude-code)."; exit 1 }
 Log "Using claude at: $ClaudeExe"
 
 # Serialization gate: wait while another headless claude job runs — three
@@ -90,7 +81,6 @@ Remove-Item $PromptFile -ErrorAction SilentlyContinue
 $CountAfter = (Get-ChildItem "$Root\content\*.md").Count
 if ($CountAfter -le $CountBefore) {
     Log "WARNING: no new article file detected after 2 attempts. Check the log: $Log"
-    Alert "daily article run failed: no new article after 2 claude attempts"
     exit 1
 }
 
@@ -99,10 +89,6 @@ Log "New article created ($CountBefore -> $CountAfter). Deploying..."
 # Build + commit + push (cmd /c for the same stderr reason)
 cmd /c "powershell -NoProfile -ExecutionPolicy Bypass -File `"$(Join-Path $PSScriptRoot 'deploy.ps1')`" >> `"$Log`" 2>&1"
 Log "deploy exited with code $LASTEXITCODE"
-if ($LASTEXITCODE -ne 0) {
-    Alert "deploy failed with exit code $LASTEXITCODE (article written but not published)"
-    exit 1
-}
 
 # Render the Pinterest pin for the new article (pins\ + captions.txt refresh).
 # Failure here never fails the run - pinning is a bonus, not the pipeline.

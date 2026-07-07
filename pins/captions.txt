@@ -13,6 +13,11 @@ Title (max 100 chars): Best Budget Espresso Machines Under $200 in 2026 (Real Sh
 Description: The best espresso machines under $200 - Flair Neo, De'Longhi Stilosa, Dedica and Wacaco Nanopresso - ranked honestly, with the compromises spelled out. #budgetcoffee #coffeegear #homebarista #coffeelover
 Link: https://hfalmalik.github.io/budgetbrewlab/best-budget-espresso-machines-under-200.html
 
+PIN: best-budget-gooseneck-kettles-under-100.png
+Title (max 100 chars): Best Budget Gooseneck Kettles Under $100 in 2026 (Pour Better, Spend Less)
+Description: The best gooseneck kettles under $100 - COSORI, Bonavita, Barista Warrior, Hario Buono and OXO - ranked honestly for pour-over, with the downsides spelled out. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/best-budget-gooseneck-kettles-under-100.html
+
 PIN: complete-pour-over-coffee-setup-under-50.png
 Title (max 100 chars): The Complete Pour-Over Coffee Setup for Under $50 (Everything You Need)
 Description: A full pour-over kit - V60 dripper, filters, scale, and server - for under $50 total, with exact street prices and the honest tradeoffs at this budget. #budgetcoffee #coffeegear #homebarista #coffeelover
