@@ -23,6 +23,11 @@ Title (max 100 chars): The Complete Pour-Over Coffee Setup for Under $50 (Everyt
 Description: A full pour-over kit - V60 dripper, filters, scale, and server - for under $50 total, with exact street prices and the honest tradeoffs at this budget. #budgetcoffee #coffeegear #homebarista #coffeelover
 Link: https://hfalmalik.github.io/budgetbrewlab/complete-pour-over-coffee-setup-under-50.html
 
+PIN: how-to-froth-milk-at-home-without-espresso-machine.png
+Title (max 100 chars): How to Froth Milk at Home for Lattes and Cappuccinos (Under $25, No Espresso Machine Needed)
+Description: A step-by-step guide to frothing milk at home cheaply - handheld frother, French press, and mason jar methods, plus which milks foam best and the mistakes to skip. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/how-to-froth-milk-at-home-without-espresso-machine.html
+
 PIN: how-to-make-cold-brew-coffee-at-home-under-30.png
 Title (max 100 chars): How to Make Great Cold Brew Coffee at Home for Under $30 (Step-by-Step)
 Description: A complete step-by-step cold brew guide - the cheap gear, the exact coffee-to-water ratio, grind size, steep time, and the honest mistakes to avoid. #budgetcoffee #coffeegear #homebarista #coffeelover

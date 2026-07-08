@@ -8,8 +8,6 @@ Stdlib + the `markdown` package only. Renders content/*.md into docs/
 Features:
   - Frontmatter parsing (title, description, date, category, tags)
   - aff: link rewriting -> Amazon affiliate URLs using config.json affiliate_tag
-  - ebay: link rewriting -> eBay Partner Network search URLs using config.json
-    ebay_campaign_id (plain untracked eBay links until the ID is set)
   - Index page grouped by category, per-category pages
   - About / Affiliate Disclosure pages from content/pages/
   - sitemap.xml, robots.txt, rss.xml
@@ -41,12 +39,6 @@ STATIC = ROOT / "static"
 MD_EXTENSIONS = ["tables", "fenced_code", "sane_lists", "smarty"]
 
 AFF_RE = re.compile(r'href="aff:([A-Za-z0-9]+)"')
-
-# ebay:search+keywords hrefs (author writes '+' for spaces, e.g. ebay:baratza+encore)
-EBAY_AFF_RE = re.compile(r'href="ebay:([^"]+)"')
-
-# eBay US program rotation ID (differs per eBay marketplace; 711-... = ebay.com)
-EBAY_ROTATION_ID = "711-53200-19255-0"
 
 
 # ---------------------------------------------------------------- helpers
@@ -132,30 +124,9 @@ def rewrite_affiliate_links(html, tag):
     return AFF_RE.sub(repl, html)
 
 
-def rewrite_ebay_links(html, campaign_id):
-    """ebay:KEYWORDS hrefs -> eBay search links. When ebay_campaign_id is set
-    (a real 10-digit EPN Campaign ID), links carry full Partner Network
-    tracking parameters; until then they render as plain eBay search links so
-    nothing is ever broken. Flipping one config value activates monetization."""
-    campaign_id = str(campaign_id or "").strip()
-    tracked = campaign_id and not campaign_id.startswith("CHANGEME")
-
-    def repl(m):
-        # keywords use '+' for spaces; strip anything URL-hostile
-        kw = re.sub(r'[^A-Za-z0-9+._-]', '', m.group(1))
-        url = f"https://www.ebay.com/sch/i.html?_nkw={kw}"
-        if tracked:
-            url += (f"&mkcid=1&mkrid={EBAY_ROTATION_ID}&siteid=0"
-                    f"&campid={campaign_id}&customid=&toolid=10001&mkevt=1")
-        return (f'href="{url}" '
-                f'rel="nofollow sponsored noopener" target="_blank"')
-    return EBAY_AFF_RE.sub(repl, html)
-
-
 def md_to_html(body, cfg):
     html = markdown.markdown(body, extensions=MD_EXTENSIONS)
     html = rewrite_affiliate_links(html, cfg["affiliate_tag"])
-    html = rewrite_ebay_links(html, cfg.get("ebay_campaign_id", ""))
     return wrap_tables(html)
 
 
@@ -443,10 +414,6 @@ def main():
     if cfg["affiliate_tag"].startswith("CHANGEME"):
         print("NOTE: affiliate_tag in config.json is still the placeholder "
               "'CHANGEME-20'. Replace it after Amazon Associates approval.")
-    if str(cfg.get("ebay_campaign_id", "")).strip().startswith("CHANGEME"):
-        print("NOTE: ebay_campaign_id in config.json is still 'CHANGEME'. "
-              "ebay: links render untracked until it is set to a real EPN "
-              "Campaign ID (partnernetwork.ebay.com).")
 
     # Clean output dir (keep the dir itself so git/OneDrive stay calm)
     out.mkdir(exist_ok=True)

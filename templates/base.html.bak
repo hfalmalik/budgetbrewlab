@@ -16,16 +16,16 @@
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="google-site-verification" content="kMgCAQFsehr2tfXLRFdxbNmKRB4PH5D3aFbhMxRpRoI" />
+<meta name="google-site-verification" content="ABC123xyz" />
 {{jsonld}}
 </head>
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="index.html">Budget<span>Brew</span>Lab</a>
+    <a class="brand" href="index.html">Budget<span>Rig</span>Lab</a>
     <nav class="site-nav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="how-we-pick.html">How We Pick</a>
       <a href="affiliate-disclosure.html">Disclosure</a>
       <a href="rss.xml">RSS</a>
     </nav>
@@ -42,7 +42,7 @@
     <p>&copy; {{year}} {{site_name}} &mdash; {{site_tagline}}.</p>
     <p>Prices and availability change constantly; always confirm on the retailer page before buying. As an Amazon Associate we earn from qualifying purchases.</p>
     {{footer_links}}
-    <p><a href="about.html">About</a> &middot; <a href="how-we-pick.html">How We Pick</a> &middot; <a href="affiliate-disclosure.html">Affiliate Disclosure</a> &middot; <a href="sitemap.xml">Sitemap</a> &middot; <a href="rss.xml">RSS</a></p>
+    <p><a href="about.html">About</a> &middot; <a href="affiliate-disclosure.html">Affiliate Disclosure</a> &middot; <a href="sitemap.xml">Sitemap</a> &middot; <a href="rss.xml">RSS</a></p>
   </div>
 </footer>
 </body>

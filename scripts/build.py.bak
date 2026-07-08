@@ -8,8 +8,6 @@ Stdlib + the `markdown` package only. Renders content/*.md into docs/
 Features:
   - Frontmatter parsing (title, description, date, category, tags)
   - aff: link rewriting -> Amazon affiliate URLs using config.json affiliate_tag
-  - ebay: link rewriting -> eBay Partner Network search URLs using config.json
-    ebay_campaign_id (plain untracked eBay links until the ID is set)
   - Index page grouped by category, per-category pages
   - About / Affiliate Disclosure pages from content/pages/
   - sitemap.xml, robots.txt, rss.xml
@@ -41,12 +39,6 @@ STATIC = ROOT / "static"
 MD_EXTENSIONS = ["tables", "fenced_code", "sane_lists", "smarty"]
 
 AFF_RE = re.compile(r'href="aff:([A-Za-z0-9]+)"')
-
-# ebay:search+keywords hrefs (author writes '+' for spaces, e.g. ebay:baratza+encore)
-EBAY_AFF_RE = re.compile(r'href="ebay:([^"]+)"')
-
-# eBay US program rotation ID (differs per eBay marketplace; 711-... = ebay.com)
-EBAY_ROTATION_ID = "711-53200-19255-0"
 
 
 # ---------------------------------------------------------------- helpers
@@ -132,30 +124,9 @@ def rewrite_affiliate_links(html, tag):
     return AFF_RE.sub(repl, html)
 
 
-def rewrite_ebay_links(html, campaign_id):
-    """ebay:KEYWORDS hrefs -> eBay search links. When ebay_campaign_id is set
-    (a real 10-digit EPN Campaign ID), links carry full Partner Network
-    tracking parameters; until then they render as plain eBay search links so
-    nothing is ever broken. Flipping one config value activates monetization."""
-    campaign_id = str(campaign_id or "").strip()
-    tracked = campaign_id and not campaign_id.startswith("CHANGEME")
-
-    def repl(m):
-        # keywords use '+' for spaces; strip anything URL-hostile
-        kw = re.sub(r'[^A-Za-z0-9+._-]', '', m.group(1))
-        url = f"https://www.ebay.com/sch/i.html?_nkw={kw}"
-        if tracked:
-            url += (f"&mkcid=1&mkrid={EBAY_ROTATION_ID}&siteid=0"
-                    f"&campid={campaign_id}&customid=&toolid=10001&mkevt=1")
-        return (f'href="{url}" '
-                f'rel="nofollow sponsored noopener" target="_blank"')
-    return EBAY_AFF_RE.sub(repl, html)
-
-
 def md_to_html(body, cfg):
     html = markdown.markdown(body, extensions=MD_EXTENSIONS)
     html = rewrite_affiliate_links(html, cfg["affiliate_tag"])
-    html = rewrite_ebay_links(html, cfg.get("ebay_campaign_id", ""))
     return wrap_tables(html)
 
 
@@ -212,22 +183,6 @@ def extract_faq(body):
     return faqs
 
 
-LIST_HEADING_RE = re.compile(r"^##\s+(\d+)\.\s+(.+?)\s*$", re.M)
-
-
-def extract_list_items(body):
-    """Extract ranked product picks from '## N. Product Name — descriptor'
-    headings for ItemList JSON-LD. Only the product name (before the em/en
-    dash descriptor) is used. Returns [] unless there are 2+ numbered picks."""
-    items = []
-    for m in LIST_HEADING_RE.finditer(body):
-        name = md_plain(m.group(2))
-        name = re.split(r"\s+[—–]\s+", name)[0].strip()
-        if name:
-            items.append(name)
-    return items if len(items) >= 2 else []
-
-
 def jsonld_script(data):
     return ('<script type="application/ld+json">'
             + json.dumps(data, ensure_ascii=False)
@@ -235,8 +190,7 @@ def jsonld_script(data):
 
 
 def article_jsonld(a, cfg, site_url, faqs):
-    """Article + BreadcrumbList (+ ItemList for ranked roundups, + FAQPage
-    when the article has an FAQ section)."""
+    """Article + BreadcrumbList (+ FAQPage when the article has an FAQ section)."""
     org = {"@type": "Organization", "name": cfg["site_name"], "url": f"{site_url}/"}
     canonical = f'{site_url}/{a["url"]}'
     blocks = [
@@ -246,7 +200,7 @@ def article_jsonld(a, cfg, site_url, faqs):
             "headline": a["title"],
             "description": a["description"],
             "datePublished": a["date_str"],
-            "dateModified": a["updated_str"],
+            "dateModified": a["date_str"],
             "author": org,
             "publisher": org,
             "url": canonical,
@@ -265,18 +219,6 @@ def article_jsonld(a, cfg, site_url, faqs):
             ],
         },
     ]
-    if a["list_items"]:
-        blocks.append({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": a["title"],
-            "itemListOrder": "https://schema.org/ItemListOrderAscending",
-            "numberOfItems": len(a["list_items"]),
-            "itemListElement": [
-                {"@type": "ListItem", "position": i, "name": name}
-                for i, name in enumerate(a["list_items"], start=1)
-            ],
-        })
     if faqs:
         blocks.append({
             "@context": "https://schema.org",
@@ -309,13 +251,6 @@ def collect_articles(cfg):
         meta, body = parse_frontmatter(path.read_text(encoding="utf-8"), path)
         slug = slugify(path.stem)
         tags = [t.strip().lower() for t in meta.get("tags", "").split(",") if t.strip()]
-        # Optional 'updated: YYYY-MM-DD' frontmatter -> dateModified signal.
-        # Falls back to the publish date when absent or malformed.
-        updated_str = meta.get("updated", meta["date"])
-        try:
-            parse_date(updated_str)
-        except ValueError:
-            updated_str = meta["date"]
         articles.append({
             "slug": slug,
             "url": f"{slug}.html",
@@ -323,19 +258,17 @@ def collect_articles(cfg):
             "description": meta["description"],
             "date": parse_date(meta["date"]),
             "date_str": meta["date"],
-            "updated_str": updated_str,
             "category": meta.get("category", "Uncategorized"),
             "tags": tags,
             "html": md_to_html(body, cfg),
             "words": len(body.split()),
             "faqs": extract_faq(body),
-            "list_items": extract_list_items(body),
         })
     articles.sort(key=lambda a: a["date"], reverse=True)
     return articles
 
 
-def related_articles(article, articles, limit=4):
+def related_articles(article, articles, limit=3):
     scored = []
     for other in articles:
         if other["slug"] == article["slug"]:
@@ -346,36 +279,7 @@ def related_articles(article, articles, limit=4):
         if score:
             scored.append((score, other))
     scored.sort(key=lambda x: (-x[0], x[1]["date"]), reverse=False)
-    rel = [o for _, o in scored[:limit]]
-    # Hub-and-spoke: never leave an article orphaned — pad with the most
-    # recent other articles so every page always cross-links the site.
-    if len(rel) < limit:
-        seen = {r["slug"] for r in rel} | {article["slug"]}
-        for other in articles:
-            if len(rel) >= limit:
-                break
-            if other["slug"] not in seen:
-                rel.append(other)
-                seen.add(other["slug"])
-    return rel
-
-
-def related_section(article, articles):
-    """Related-articles footer: descriptive links to sibling articles plus a
-    link up to the category hub page (hub-and-spoke internal linking)."""
-    rel = related_articles(article, articles)
-    if not rel:
-        return ""
-    items = "".join(
-        f'<li><a href="{r["url"]}">{escape(r["title"])}</a><br>'
-        f'<small>{escape(r["description"])}</small></li>'
-        for r in rel
-    )
-    cat = article["category"]
-    hub = (f'<p class="related-hub"><a href="category-{slugify(cat)}.html">'
-           f"Browse all {escape(cat)} articles &rarr;</a></p>")
-    return (f'<aside class="related"><h2>Related articles</h2>'
-            f"<ul>{items}</ul>{hub}</aside>")
+    return [o for _, o in scored[:limit]]
 
 
 def article_card(a):
@@ -389,20 +293,9 @@ def article_card(a):
     )
 
 
-def clamp_description(text, limit=158):
-    """Meta descriptions over ~158 chars get truncated in SERPs mid-word;
-    clamp at a word boundary with an ellipsis instead."""
-    text = re.sub(r"\s+", " ", str(text)).strip()
-    if len(text) <= limit:
-        return text
-    cut = text[: limit - 1].rsplit(" ", 1)[0].rstrip(",;:")
-    return cut + "…"
-
-
 def build_page(base, cfg, *, title, description, canonical, content,
                og_type="website", jsonld=""):
     links = promo_links_html(cfg)
-    description = clamp_description(description)
     return render(
         base,
         site_name=cfg["site_name"],
@@ -443,10 +336,6 @@ def main():
     if cfg["affiliate_tag"].startswith("CHANGEME"):
         print("NOTE: affiliate_tag in config.json is still the placeholder "
               "'CHANGEME-20'. Replace it after Amazon Associates approval.")
-    if str(cfg.get("ebay_campaign_id", "")).strip().startswith("CHANGEME"):
-        print("NOTE: ebay_campaign_id in config.json is still 'CHANGEME'. "
-              "ebay: links render untracked until it is set to a real EPN "
-              "Campaign ID (partnernetwork.ebay.com).")
 
     # Clean output dir (keep the dir itself so git/OneDrive stay calm)
     out.mkdir(exist_ok=True)
@@ -465,11 +354,14 @@ def main():
 
     # --- article pages
     for a in articles:
-        updated_html = ""
-        if a["updated_str"] != a["date_str"]:
-            upd_human = parse_date(a["updated_str"]).strftime("%B %d, %Y")
-            updated_html = (f' &middot; Updated <time datetime="{a["updated_str"]}">'
-                            f"{upd_human}</time>")
+        rel = related_articles(a, articles)
+        related_html = ""
+        if rel:
+            items = "".join(
+                f'<li><a href="{r["url"]}">{escape(r["title"])}</a></li>' for r in rel
+            )
+            related_html = (f'<aside class="related"><h2>Related articles</h2>'
+                            f"<ul>{items}</ul></aside>")
         content = render(
             article_tpl,
             title=escape(a["title"]),
@@ -477,9 +369,8 @@ def main():
             category_url=f'category-{slugify(a["category"])}.html',
             date_str=a["date_str"],
             date_human=a["date"].strftime("%B %d, %Y"),
-            updated_html=updated_html,
             body=a["html"],
-            related=related_section(a, articles),
+            related=related_html,
         )
         page = build_page(base, cfg, title=f'{a["title"]} — {cfg["site_name"]}',
                           description=a["description"],
@@ -552,7 +443,6 @@ def main():
                 .replace('href="favicon.svg"', f'href="{site_url}/favicon.svg"')
                 .replace('href="index.html"', f'href="{site_url}/"')
                 .replace('href="about.html"', f'href="{site_url}/about.html"')
-                .replace('href="how-we-pick.html"', f'href="{site_url}/how-we-pick.html"')
                 .replace('href="affiliate-disclosure.html"',
                          f'href="{site_url}/affiliate-disclosure.html"')
                 .replace('href="rss.xml"', f'href="{site_url}/rss.xml"')
@@ -592,12 +482,12 @@ def main():
     # --- sitemap.xml (lastmod: article/page frontmatter date; newest date for
     #     index and category pages, since they change whenever content does)
     today = datetime.now().strftime("%Y-%m-%d")
-    newest = max((a["updated_str"] for a in articles), default=today)
+    newest = max((a["date_str"] for a in articles), default=today)
     urls = [(f"{site_url}/", newest)]
-    urls += [(f"{site_url}/{a['url']}", a["updated_str"]) for a in articles]
+    urls += [(f"{site_url}/{a['url']}", a["date_str"]) for a in articles]
     urls += [
         (f"{site_url}/category-{slugify(c)}.html",
-         max(a["updated_str"] for a in items))
+         max(a["date_str"] for a in items))
         for c, items in sorted(categories.items())
     ]
     urls += [(f"{site_url}/{p['url']}", p["date_str"]) for p in static_pages]
@@ -633,29 +523,12 @@ def main():
     # --- summary
     thin = [a for a in articles if a["words"] < 1000]
     faq_count = sum(1 for a in articles if a["faqs"])
-    list_count = sum(1 for a in articles if a["list_items"])
     print(f"Built {len(articles)} articles ({faq_count} with FAQPage schema), "
           f"{len(categories)} categories, {len(static_pages)} static pages -> {out}")
-    print(f"Schema: {list_count} articles carry ItemList (ranked roundup) markup.")
     if thin:
         print("WARNING: articles under 1000 words (thin content hurts SEO):")
         for a in thin:
             print(f"  - {a['slug']} ({a['words']} words)")
-
-    # --- SEO advisories (never fail the build)
-    internal_link_re = re.compile(r'href="[a-z0-9][a-z0-9-]*\.html"')
-    for a in articles:
-        advisories = []
-        if len(a["title"]) > 65:
-            advisories.append(f"title is {len(a['title'])} chars (aim <=60; SERPs truncate)")
-        dlen = len(a["description"])
-        if dlen < 110 or dlen > 165:
-            advisories.append(f"meta description is {dlen} chars (aim 140-158)")
-        n_internal = len(internal_link_re.findall(a["html"]))
-        if n_internal < 2:
-            advisories.append(f"only {n_internal} in-body internal link(s) (aim 3-8)")
-        for msg in advisories:
-            print(f"SEO ADVISORY: {a['slug']}: {msg}")
 
     # --- content lint (warnings only, never fails the build)
     run_content_lint()

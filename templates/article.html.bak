@@ -3,7 +3,7 @@
     <a href="index.html">Home</a> &rsaquo; <a href="{{category_url}}">{{category}}</a>
   </nav>
   <h1>{{title}}</h1>
-  <p class="article-meta">Published <time datetime="{{date_str}}">{{date_human}}</time>{{updated_html}} &middot; {{category}}</p>
+  <p class="article-meta">Published <time datetime="{{date_str}}">{{date_human}}</time> &middot; {{category}}</p>
   {{body}}
   {{related}}
 </article>
