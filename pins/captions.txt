@@ -37,3 +37,8 @@ PIN: moka-pot-vs-espresso-machine-budget.png
 Title (max 100 chars): Moka Pot vs Espresso Machine - Can a $35 Pot Replace a $200 Machine in 2026?
 Description: Moka pot vs espresso machine compared honestly - crema, strength, cost, effort and cleanup - so you know whether the $35 stovetop pot really replaces the machine. #budgetcoffee #coffeegear #homebarista #coffeelover
 Link: https://hfalmalik.github.io/budgetbrewlab/moka-pot-vs-espresso-machine-budget.html
+
+PIN: v60-vs-kalita-wave-budget-pour-over-dripper.png
+Title (max 100 chars): V60 vs Kalita Wave: Best Budget Pour-Over Dripper 2026?
+Description: Hario V60 vs Kalita Wave, both under $30 - cone vs flat bed, flow rate, forgiveness, filter cost and taste compared, so you buy the right dripper first. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/v60-vs-kalita-wave-budget-pour-over-dripper.html
