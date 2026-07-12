@@ -23,6 +23,11 @@ Title (max 100 chars): Best Budget Gooseneck Kettles Under $100 in 2026 (Pour Be
 Description: The best gooseneck kettles under $100 - COSORI, Bonavita, Barista Warrior, Hario Buono and OXO - ranked honestly for pour-over, with the downsides spelled out. #budgetcoffee #coffeegear #homebarista #coffeelover
 Link: https://hfalmalik.github.io/budgetbrewlab/best-budget-gooseneck-kettles-under-100.html
 
+PIN: burr-vs-blade-coffee-grinder.png
+Title (max 100 chars): Burr vs Blade Grinder: Is $45 Worth It? (2026)
+Description: Burr vs blade coffee grinder compared - why a $45 burr beats a $20 blade on taste, the honest cost-per-cup math, and when a blade is actually fine. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/burr-vs-blade-coffee-grinder.html
+
 PIN: complete-pour-over-coffee-setup-under-50.png
 Title (max 100 chars): The Complete Pour-Over Coffee Setup for Under $50 (Everything You Need)
 Description: A full pour-over kit - V60 dripper, filters, scale, and server - for under $50 total, with exact street prices and the honest tradeoffs at this budget. #budgetcoffee #coffeegear #homebarista #coffeelover
