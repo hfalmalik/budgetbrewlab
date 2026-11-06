@@ -6,7 +6,7 @@ category: Pour-Over
 tags: v60, kalita-wave, pour-over, dripper, comparison, head-to-head
 ---
 
-Ask ten pour-over drinkers which dripper to buy and you'll start a small war. Half will tell you the [Hario V60](aff:B000P4D5FU) is the only serious choice; the other half swear the Kalita Wave fixed everything the V60 gets wrong. Both are right, and both are missing the point — these two drippers are built around opposite philosophies, and the "better" one is simply the one that matches *how carefully you want to pour*.
+Ask ten pour-over drinkers which dripper to buy and you'll start a small war. Half will tell you the [Hario V60](aff:B0BWHKPCLL) is the only serious choice; the other half swear the Kalita Wave fixed everything the V60 gets wrong. Both are right, and both are missing the point — these two drippers are built around opposite philosophies, and the "better" one is simply the one that matches *how carefully you want to pour*.
 
 Here's the honest head-to-head, with the real tradeoffs and the ongoing filter costs nobody warns you about, so you buy the right $25 cone the first time instead of the wrong one twice.
 
@@ -78,9 +78,9 @@ The category-specific trap: people blame the dripper for a bad cup when the real
 
 ## The picks
 
-For the cone camp, the [Hario V60 02 clear plastic dripper](aff:B002DGA3PY) at about **$8** is the smartest entry point in all of coffee — it brews identically to the pretty versions and won't crack. Want something that lasts a lifetime on the counter? The [Hario V60 02 ceramic dripper](aff:B000P4D5FU) (~$23) holds heat better and looks the part. Feed either with a 100-pack of [Hario V60 02 paper filters](aff:B001O0RCFU) (~$7).
+For the cone camp, the [Hario V60 02 clear plastic dripper](aff:B001RBTSMM) at about **$8** is the smartest entry point in all of coffee — it brews identically to the pretty versions and won't crack. Want something that lasts a lifetime on the counter? The [Hario V60 02 ceramic dripper](aff:B0BWHKPCLL) (~$23) holds heat better and looks the part. Feed either with a 100-pack of [Hario V60 02 paper filters](aff:B001U7EOYA) (~$7).
 
-For the flat-bed camp, the [Kalita Wave 185 stainless steel dripper](aff:B00EUEMK4M) (~$28) is the durable everyday pick — steel won't chip like the glass version and heats evenly. Smaller households can drop to the [Kalita Wave 155](aff:B00EUEMKR4) (~$25) for single cups. Stock up on genuine [Kalita Wave 185 filters](aff:B00EUEMK9C) (~$10/100) so you're never caught short, since the local grocery probably won't carry them.
+For the flat-bed camp, the [Kalita Wave 185 stainless steel dripper](aff:B000X1AM0Y) (~$28) is the durable everyday pick — steel won't chip like the glass version and heats evenly. Smaller households can drop to the [Kalita Wave 155](aff:B09921H5Z3) (~$25) for single cups. Stock up on genuine [Kalita Wave 185 filters](aff:B0793L756T) (~$10/100) so you're never caught short, since the local grocery probably won't carry them.
 
 Both are outstanding drippers. The V60 is the enthusiast's instrument; the Wave is the dependable daily driver. Pick the one that matches your patience at the counter, put the money you save into a better grinder, and you'll out-brew most cafés either way.
 

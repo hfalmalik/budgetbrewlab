@@ -124,9 +124,19 @@ def slugify(name):
 
 
 def rewrite_affiliate_links(html, tag):
-    """aff:ASIN hrefs -> tagged Amazon links, opened in a new tab, rel per Google/FTC."""
+    """aff:ASIN hrefs -> Amazon links, opened in a new tab, rel per Google/FTC.
+    Until affiliate_tag in config.json is a real Associates tag (not empty, not
+    the CHANGEME placeholder) the links are plain product links with no tag, so
+    a placeholder never goes out on a public page. Setting the real tag turns
+    the tagged, sponsored links back on with no other change."""
+    tag = str(tag or "").strip()
+    tagged = tag and not tag.startswith("CHANGEME")
+
     def repl(m):
         asin = m.group(1)
+        if not tagged:
+            return (f'href="https://www.amazon.com/dp/{asin}" '
+                    f'rel="nofollow noopener" target="_blank"')
         return (f'href="https://www.amazon.com/dp/{asin}?tag={tag}" '
                 f'rel="nofollow sponsored noopener" target="_blank"')
     return AFF_RE.sub(repl, html)

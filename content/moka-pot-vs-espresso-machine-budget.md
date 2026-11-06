@@ -70,9 +70,9 @@ That flips the math. If your total budget is, say, $120, a $35 moka pot plus a g
 
 ## The picks
 
-The classic is the [Bialetti Moka Express 6-cup](aff:B0001IXA9O) at ~$35 — aluminum, made in Italy, effectively immortal if you don't put it in the dishwasher. Smaller households want the [Bialetti Moka Express 3-cup](aff:B00004RFRV) (~$25); it makes about two small cups. If you have an **induction** cooktop, skip aluminum and get a stainless steel stovetop maker like the [GROSCHE Milano Steel](aff:B07P5FH8N9) (~$40), which also survives the dishwasher.
+The classic is the [Bialetti Moka Express 6-cup](aff:B000CNY6UK) at ~$35 — aluminum, made in Italy, effectively immortal if you don't put it in the dishwasher. Smaller households want the [Bialetti Moka Express 3-cup](aff:B0HLBXCFK7) (~$25); it makes about two small cups. If you have an **induction** cooktop, skip aluminum and get a stainless steel stovetop maker like the [GROSCHE Milano Steel](aff:B08C1J3ZST) (~$40), which also survives the dishwasher.
 
-On the machine side, the value benchmark remains the [De'Longhi Stilosa EC260](aff:B07C9YZ2Q6) around $100 — read the full breakdown, including the manual-lever alternatives, in our [espresso machine guide](best-budget-espresso-machines-under-200.html) before you commit.
+On the machine side, the value benchmark remains the [De'Longhi Stilosa EC260](aff:B08C96BG9H) around $100 — read the full breakdown, including the manual-lever alternatives, in our [espresso machine guide](best-budget-espresso-machines-under-200.html) before you commit.
 
 ## FAQ
 

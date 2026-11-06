@@ -23,7 +23,7 @@ The honest headline: a **handheld frother is the sweet spot** for most people, b
 
 ## Method 1: The handheld electric frother (~$12)
 
-This is the pick for most kitchens. A handheld frother is a battery-powered wand with a small whisk coil on the end that spins fast enough to whip air into milk in about 15–20 seconds. The **[Zulay Original Milk Frother](aff:B0716SBTG8)** (~$12) is the perennial budget favorite — stainless whisk, runs on two AA batteries, and comes with a little stand.
+This is the pick for most kitchens. A handheld frother is a battery-powered wand with a small whisk coil on the end that spins fast enough to whip air into milk in about 15–20 seconds. The **[Zulay Original Milk Frother](aff:B09D8T11YS)** (~$12) is the perennial budget favorite — stainless whisk, runs on two AA batteries, and comes with a little stand.
 
 **How to use it:** Warm your milk first (30–45 seconds in the microwave, or on the stove to about 150°F — steaming, not boiling). Tilt the cup, submerge the whisk just below the surface, and turn it on. Keep it near the top to pull in air for the first few seconds, then sink it slightly to smooth the texture. Stop when the volume has roughly doubled and the surface looks glossy.
 
@@ -45,7 +45,7 @@ No frother, no press? A jar with a tight lid will do in a pinch. Fill a mason ja
 
 ## If you want to spend a little more
 
-A standalone countertop frother like the **[Maestri House Milk Frother](aff:B08P5MB8Q9)** (~$40) heats and froths in one step — you pour in cold milk, press a button, and walk away. Most units do hot foam, hot thin milk, and cold foam for iced drinks. It's genuinely the nicest experience here, and if you make a milk drink every single morning it pays for itself in convenience.
+A standalone countertop frother like the **[Maestri House Milk Frother](aff:B0DZ667135)** (~$40) heats and froths in one step — you pour in cold milk, press a button, and walk away. Most units do hot foam, hot thin milk, and cold foam for iced drinks. It's genuinely the nicest experience here, and if you make a milk drink every single morning it pays for itself in convenience.
 
 **The honest downside:** at forty dollars it's four times the price of a handheld and doesn't make objectively better foam than a French press — you're paying for the hands-off, self-heating convenience, not superior texture. The nonstick jug is also hand-wash-only on most models. Worth it for daily drinkers; overkill for the occasional weekend cappuccino.
 

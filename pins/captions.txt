@@ -43,6 +43,11 @@ Title (max 100 chars): How to Make Great Cold Brew Coffee at Home for Under $30 
 Description: A complete step-by-step cold brew guide - the cheap gear, the exact coffee-to-water ratio, grind size, steep time, and the honest mistakes to avoid. #budgetcoffee #coffeegear #homebarista #coffeelover
 Link: https://hfalmalik.github.io/budgetbrewlab/how-to-make-cold-brew-coffee-at-home-under-30.html
 
+PIN: how-to-store-coffee-beans-fresh-under-25.png
+Title (max 100 chars): How to Store Coffee Beans to Stay Fresh (Under $25, 2026)
+Description: Keep beans tasting fresh for weeks. We compare airtight canisters under $25, bust the freezer myth, and flag the storage mistakes quietly ruining your coffee. #budgetcoffee #coffeegear #homebarista #coffeelover
+Link: https://hfalmalik.github.io/budgetbrewlab/how-to-store-coffee-beans-fresh-under-25.html
+
 PIN: moka-pot-vs-espresso-machine-budget.png
 Title (max 100 chars): Moka Pot vs Espresso Machine - Can a $35 Pot Replace a $200 Machine in 2026?
 Description: Moka pot vs espresso machine compared honestly - crema, strength, cost, effort and cleanup - so you know whether the $35 stovetop pot really replaces the machine. #budgetcoffee #coffeegear #homebarista #coffeelover

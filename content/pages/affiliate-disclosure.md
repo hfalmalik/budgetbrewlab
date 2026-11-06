@@ -6,17 +6,17 @@ date: 2026-07-05
 
 # Affiliate Disclosure
 
-*Last updated: July 5, 2026*
+*Last updated: November 6, 2026*
 
-BudgetBrewLab is a participant in the **Amazon Services LLC Associates Program**, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+BudgetBrewLab is a member of the **eBay Partner Network**, an affiliate program: when you click one of our eBay links and buy something, eBay may pay us a commission.
 
-**As an Amazon Associate, we earn from qualifying purchases.**
+Our Amazon links are not yet part of the Amazon Associates program. Until our membership is approved they are ordinary links and earn us nothing.
 
 ## What this means in plain English
 
-- Some links on this site point to products on Amazon. These are affiliate links.
-- If you click one of those links and buy something (the linked product or anything else during that session), Amazon pays us a small percentage of the sale.
-- **You pay exactly the same price** whether you use our link or not. The commission comes out of Amazon's side, not yours.
+- Some links on this site point to products on eBay or Amazon. The eBay links are affiliate links today; the Amazon links become affiliate links only once Amazon approves our membership.
+- If you click an affiliate link and buy something, the retailer pays us a small percentage of the sale.
+- **You pay exactly the same price** whether you use our link or not. The commission comes out of the retailer's side, not yours.
 
 ## What it does NOT mean
 

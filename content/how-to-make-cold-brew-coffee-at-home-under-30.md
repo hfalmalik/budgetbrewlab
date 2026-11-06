@@ -24,15 +24,15 @@ The honest truth is that a **$10 jar plus an $8 straining bag** is a complete co
 
 ### The bare-minimum kit (~$18)
 
-A wide-mouth **[Ball 64oz Glass Mason Jar](aff:B00LGLHUP0)** (~$10) is the classic vessel — heat-safe, non-reactive, and it seals for fridge storage. Pair it with a reusable **[fine-mesh nut-milk bag](aff:B01N0RXVWL)** (~$8) for straining. That's it. That's the setup.
+A wide-mouth **[Ball 64oz Glass Mason Jar](aff:B0GP6B4FJJ)** (~$10) is the classic vessel — heat-safe, non-reactive, and it seals for fridge storage. Pair it with a reusable **[fine-mesh nut-milk bag](aff:B072NBTXTZ)** (~$8) for straining. That's it. That's the setup.
 
 **The honest downside:** straining through a nut-milk bag is slightly messy the first couple of times — you'll want to do it over the sink and give it a gentle squeeze, and the fine sediment means you may want a second pass through a paper filter if you're fussy about clarity.
 
 ### The convenience upgrade (~$27)
 
-If you'd rather not deal with a floppy bag, the **[County Line Kitchen 1-Gallon Cold Brew Maker](aff:B01N7OZS4P)** bundles a heavy glass jar with a fitted stainless-steel mesh basket. You add grounds to the basket, submerge, steep, then lift the whole basket out — no separate straining step. It makes a large batch, which is the point of cold brew anyway.
+If you'd rather not deal with a floppy bag, the **[County Line Kitchen 1-Gallon Cold Brew Maker](aff:B0BHKJD1BB)** bundles a heavy glass jar with a fitted stainless-steel mesh basket. You add grounds to the basket, submerge, steep, then lift the whole basket out — no separate straining step. It makes a large batch, which is the point of cold brew anyway.
 
-**The honest downside:** the fine mesh basket clogs with super-fine grounds if your grind is too small, slowing the lift-out to a crawl, and the gallon size is genuinely large — overkill for a solo drinker who won't finish it inside the freshness window. The [OXO Good Grips Cold Brew Maker](aff:B01BAORNI2) (~$50) is slicker still with a one-touch rainmaker valve, but at fifty dollars it busts this article's budget and doesn't taste any better.
+**The honest downside:** the fine mesh basket clogs with super-fine grounds if your grind is too small, slowing the lift-out to a crawl, and the gallon size is genuinely large — overkill for a solo drinker who won't finish it inside the freshness window. The [OXO Good Grips Cold Brew Maker](aff:B00JVSVM36) (~$50) is slicker still with a one-touch rainmaker valve, but at fifty dollars it busts this article's budget and doesn't taste any better.
 
 ## The ratio that matters most
 

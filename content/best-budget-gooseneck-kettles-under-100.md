@@ -28,7 +28,7 @@ This is the kettle I steer most people toward. For around $50 you get a variable
 
 **The honest downside:** the 0.8L capacity is genuinely small. It is plenty for one or two pour-over mugs, but if you brew a full 1L Chemex for a household you will be refilling and reheating mid-brew, which is annoying and drops the water temperature. The interior lid rim also has some plastic, which purists dislike. For a single-cup-a-morning routine, none of this matters; for batch brewing, size up.
 
-Get it here: [COSORI Gooseneck Electric Kettle](aff:B07YZ3L1K9).
+Get it here: [COSORI Gooseneck Electric Kettle](aff:B07T1CH2HH).
 
 ## 2. Bonavita 1.0L Variable Temperature — the precision pick (~$75)
 
@@ -36,7 +36,7 @@ The Bonavita variable-temp kettle has been the darling of pour-over forums for y
 
 **The honest downside:** reliability is the wildcard. Across the various Bonavita revisions there is a persistent tail of owners reporting electronics or heating-base failures after a year or two, and the model numbers change often enough that you want to check current reviews before buying. It is a superb kettle when it works — just buy from a seller with an easy return window, and treat the base as the part most likely to eventually fail.
 
-Get it here: [Bonavita 1.0L Variable Temperature Kettle](aff:B0722F45NL).
+Get it here: [Bonavita 1.0L Variable Temperature Kettle](aff:B07HQSLC53).
 
 ## 3. Barista Warrior Stovetop Gooseneck — best no-electronics option (~$40)
 
@@ -44,7 +44,7 @@ If you cook on induction, want nothing that can short out, or simply like the ri
 
 **The honest downside:** it is a stovetop kettle, so there is no "hold" function — you heat the water, watch the dial, pull it off the heat at your target, and start brewing before it drifts too far. That is a minute of active attention every morning that an electric kettle would handle for you. The thermometer also lags a touch behind the true water temperature, so give it a second to settle before trusting the reading.
 
-Get it here: [Barista Warrior Stovetop Gooseneck Kettle](aff:B07Q3VK8LT).
+Get it here: [Barista Warrior Stovetop Gooseneck Kettle](aff:B01KSWK25M).
 
 ## 4. Hario V60 Buono Drip Kettle — the classic (~$55)
 
@@ -52,7 +52,7 @@ The Hario Buono is the kettle that appears in half the pour-over tutorials on th
 
 **The honest downside:** it has zero temperature help. No thermometer, no presets, no hold — you boil it and either use a separate probe thermometer or use the boil-and-wait method, which is less precise than any electric on this list. The wide spout base also lets water flow a little faster than the tightest goosenecks, so pour discipline matters more here. You are paying partly for the iconic looks; buy it for capacity, durability, and style rather than for convenience.
 
-Get it here: [Hario V60 Buono Drip Kettle](aff:B001803124).
+Get it here: [Hario V60 Buono Drip Kettle](aff:B0BWGXG5GN).
 
 ## 5. OXO Brew Adjustable Temperature — set-and-forget convenience (~$100)
 
@@ -60,7 +60,7 @@ At the very top of the budget sits the OXO Brew adjustable kettle. It brings the
 
 **The honest downside:** at ~$100 it is the ceiling of "budget," and for that money the flow rate runs a touch faster than the Bonavita's, so absolute-control brewers occasionally find it harder to pour a truly slow bloom. It is also large on the counter. It is a genuinely excellent kettle — just the most expensive way to get onto this list, and the extra $50 over the COSORI buys convenience and capacity rather than a better pour.
 
-Get it here: [OXO Brew Adjustable Temperature Pour-Over Kettle](aff:B07DNHRML6).
+Get it here: [OXO Brew Adjustable Temperature Pour-Over Kettle](aff:B074KHPS7F).
 
 ## What about the Fellow Stagg EKG?
 

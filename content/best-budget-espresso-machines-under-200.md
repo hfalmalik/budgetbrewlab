@@ -27,7 +27,7 @@ For someone who finds the ritual satisfying — heating the water, dialing the g
 
 **The honest downside:** the Neo demands a genuinely good, espresso-capable grinder, which the cheapest budget burrs are not. Its pressure is also lower and less consistent than a pump machine's, so crema is thinner, and pulling a shot is a two-hands, several-minutes affair every single time. If you want to press a button while half-awake, this is the wrong machine — full stop.
 
-Get it here: [Flair Neo Espresso Maker](aff:B08GPLD3K7).
+Get it here: [Flair Neo Espresso Maker](aff:B08FKCV3WT).
 
 ## 2. De'Longhi Stilosa EC260 — the cheapest real machine (~$100)
 
@@ -35,7 +35,7 @@ If you want an actual plug-in espresso machine and $100 is the ceiling, the Stil
 
 **The honest downside:** that same pressurized basket puts a ceiling on quality. It manufactures crema artificially, so as your palate improves you'll hit a wall the Stilosa can't climb past. The steam wand is also weak and slow, the drip tray is small, and build quality is frankly plasticky. It's a fine on-ramp, not a machine you keep for a decade.
 
-Get it here: [De'Longhi Stilosa EC260](aff:B07VJ8FXCS).
+Get it here: [De'Longhi Stilosa EC260](aff:B08C96BG9H).
 
 ## 3. De'Longhi Dedica EC685 — convenience wins mornings (~$180-200)
 
@@ -43,7 +43,7 @@ The Dedica is the "I just want good espresso without a project" pick. It's remar
 
 **The honest downside:** the thermoblock heats water fast but holds very little, so pulling several drinks back-to-back means waiting for it to recover between shots and steaming — a real annoyance when guests are over. Like the Stilosa it ships with pressurized baskets, so peak quality trails a manual machine, and at ~$200 it sits right at the top of "budget." It's the convenience champion, not the flavor champion.
 
-Get it here: [De'Longhi Dedica EC685](aff:B0C6WB1N7M).
+Get it here: [De'Longhi Dedica EC685](aff:B072WZL4ZT).
 
 ## 4. Wacaco Nanopresso — espresso anywhere (~$70)
 
@@ -51,7 +51,7 @@ The Nanopresso isn't really a countertop machine and shouldn't be judged as one.
 
 **The honest downside:** it's a single-shot device that needs disassembly and rinsing after every use, the tiny basket holds only enough for one small espresso, and you supply the hot water yourself. As a daily home machine for more than one person it's tedious. As a portable espresso solution, nothing else at $70 comes close.
 
-Get it here: [Wacaco Nanopresso](aff:B078NRZ8K4).
+Get it here: [Wacaco Nanopresso](aff:B0797T2FYL).
 
 ## Which one should you actually buy?
 

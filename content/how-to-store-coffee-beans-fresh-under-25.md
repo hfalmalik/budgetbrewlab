@@ -44,19 +44,19 @@ You do not need to spend a fortune. Here are the picks that hit the sweet spot o
 
 ### The all-rounder: Coffee Gator Stainless Steel Canister (~$22)
 
-The **[Coffee Gator Stainless Steel Canister](aff:B01CTGZUFC)** is the default recommendation for most people. It's opaque brushed steel (light-proof), has a silicone-sealed lid, and — the clever bit — a **one-way CO₂ valve** built into the lid plus a date-tracking dial so you can mark when you opened the bag. The valve is genuinely useful: it lets fresh beans off-gas without letting oxygen back in, which a plain sealed jar can't do. The 22oz size swallows a standard 12oz bag with room to spare.
+The **[Coffee Gator Stainless Steel Canister](aff:B07W1KN79C)** is the default recommendation for most people. It's opaque brushed steel (light-proof), has a silicone-sealed lid, and — the clever bit — a **one-way CO₂ valve** built into the lid plus a date-tracking dial so you can mark when you opened the bag. The valve is genuinely useful: it lets fresh beans off-gas without letting oxygen back in, which a plain sealed jar can't do. The 22oz size swallows a standard 12oz bag with room to spare.
 
 **The honest downside:** because it's opaque steel, you can't see how much coffee is left without opening it (which briefly lets air in), and the little push-button valve can stiffen or gum up with oily dark-roast residue over a year of use — it needs an occasional wipe-down to keep sealing well.
 
 ### The cheapest good option: OXO Good Grips POP Container (~$16)
 
-If you want the lowest price that still seals properly, the **[OXO Good Grips POP Container](aff:B00J45ZMFC)** (the 1.7-quart size fits a 12oz bag) uses a satisfying push-button lid that creates an airtight seal in one press and releases it in another. It's a kitchen-storage workhorse, stacks neatly, and the wide mouth makes scooping easy.
+If you want the lowest price that still seals properly, the **[OXO Good Grips POP Container](aff:B09W9K2F8S)** (the 1.7-quart size fits a 12oz bag) uses a satisfying push-button lid that creates an airtight seal in one press and releases it in another. It's a kitchen-storage workhorse, stacks neatly, and the wide mouth makes scooping easy.
 
 **The honest downside:** it's **clear plastic**, so it fails the light-protection test — you must keep it in a closed cupboard, not on display. It also has no CO₂ valve, so with very fresh beans, pressure can build slightly; just "burp" the lid for the first few days.
 
 ### The airflow-purging upgrade: Airscape Kilo (~$40, over budget)
 
-For completeness, the **[Airscape Kilo](aff:B0037US8DU)** uses an inner plunger lid that you press down to physically push air *out* of the canister before the outer lid goes on — the closest thing to vacuum sealing without a pump. It holds a full kilo of beans.
+For completeness, the **[Airscape Kilo](aff:B07W6RKJVF)** uses an inner plunger lid that you press down to physically push air *out* of the canister before the outer lid goes on — the closest thing to vacuum sealing without a pump. It holds a full kilo of beans.
 
 **The honest downside:** at around $40 it busts this article's under-$25 budget, and the plunger's silicone gasket is a wear part — after heavy daily use it can lose its tight glide and need replacing. Worth it for high-volume households; overkill for a casual drinker.
 

@@ -30,7 +30,7 @@ If you want one scale and one recommendation, this is it. For around $16 the Wei
 
 **The honest downside:** the small platform that makes it fit an espresso tray also makes it easy to unbalance with a wide dripper or a tall server — center your gear carefully or it wobbles. There is also no automatic tare when you place a vessel; you tare manually every time. Minor once it is muscle memory, but worth knowing.
 
-Get it here: [Weightman Espresso Scale with Timer](aff:B08P3MZ6RT).
+Get it here: [Weightman Espresso Scale with Timer](aff:B0BLNFWP51).
 
 ## 2. BAGAIL Basics Coffee Scale with Timer — best for pour-over (~$19)
 
@@ -38,7 +38,7 @@ The BAGAIL is the flat-topped, slightly larger scale that pour-over people gravi
 
 **The honest downside:** the display has no backlight, so in a dim pre-dawn kitchen you are squinting or reaching for the light switch. It is also a touch large to live permanently under an espresso machine. As a dedicated pour-over and drip station, though, it is hard to fault at the price — especially next to a decent hand grinder from our [budget grinders under $60 guide](best-budget-coffee-grinders-under-60.html).
 
-Get it here: [BAGAIL Basics Coffee Scale with Timer](aff:B07GNGGQ4K).
+Get it here: [BAGAIL Basics Coffee Scale with Timer](aff:B0BNL5JCVR).
 
 ## 3. KitchenTour Coffee Scale — cheapest true 0.1 g (~$14)
 
@@ -46,7 +46,7 @@ When people ask for the absolute-minimum scale that is still worth owning, this 
 
 **The honest downside:** you feel the price in the refresh rate. The display updates a beat slower than the Weightman or BAGAIL, so during a fast espresso shot the number lags reality by a fraction of a second — fine for pour-over, slightly annoying when you are trying to stop a shot at an exact yield. The buttons are also a little mushy. For the money, these are easy compromises to accept.
 
-Get it here: [KitchenTour Coffee Scale with Timer](aff:B07DHZ5N29).
+Get it here: [KitchenTour Coffee Scale with Timer](aff:B083PX1VHG).
 
 ## 4. Greater Goods Nourish Digital Kitchen Scale — the crossover pick (~$15)
 
@@ -54,7 +54,7 @@ Not everyone wants a single-purpose gadget. The Greater Goods Nourish is a full-
 
 **The honest downside:** it reads in **1-gram** increments and has no brew timer — the two specs that separate a coffee scale from a kitchen scale. Re-read the math section above: 1 g resolution is fine for a 25 g bloom but coarse for weighing a shot. If you brew big-batch pour-over or French press and time on your phone, you will barely notice; if you chase espresso ratios, you will outgrow it. Speaking of French press, it is all the scale you need for the method in our [AeroPress vs French Press breakdown](aeropress-vs-french-press-budget-brewer.html).
 
-Get it here: [Greater Goods Nourish Digital Kitchen Scale](aff:B074M5NGL2).
+Get it here: [Greater Goods Nourish Digital Kitchen Scale](aff:B01JTDG084).
 
 ## 5. Apexstone Coffee Scale with Timer — best for messy espresso (~$25)
 
@@ -62,7 +62,7 @@ At the top of the budget sits the Apexstone, and it earns the extra few dollars 
 
 **The honest downside:** it is the most expensive scale here, and the water resistance is *splash*-resistant, not waterproof — do not run it under the tap. Being USB-C only also means that if the internal battery eventually degrades you cannot just pop in fresh cells. For a dedicated espresso station it is worth it; for a dry pour-over setup you are paying for ruggedness you will not use, and the [budget espresso machines guide](best-budget-espresso-machines-under-200.html) pairs with it best.
 
-Get it here: [Apexstone Coffee Scale with Timer](aff:B09XZ7T4QM).
+Get it here: [Apexstone Coffee Scale with Timer](aff:B07JG1PXLC).
 
 ## The three budget-scale traps (read before you buy)
 
