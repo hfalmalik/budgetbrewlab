@@ -2,3 +2,6 @@
 # Automation run logs - never publish (machine paths, workflow internals)
 scripts/logs/
 .gstack/
+
+# Atlas backups - never publish
+*.bak*

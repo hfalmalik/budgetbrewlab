@@ -79,7 +79,7 @@ foreach ($attempt in 1..2) {
     # Timeout-guarded: a stalled API stream once left claude hanging for hours
     # (2026-07-06). 30 min per attempt, then kill and let the retry run.
     $p = Start-Process -FilePath "$env:ComSpec" -ArgumentList '/c', `
-        "type `"$PromptFile`" | `"$ClaudeExe`" -p --permission-mode acceptEdits >> `"$Log`" 2>&1" `
+        "type `"$PromptFile`" | `"$ClaudeExe`" -p --permission-mode acceptEdits --allowedTools `"WebSearch,WebFetch`" >> `"$Log`" 2>&1" `
         -WindowStyle Hidden -PassThru
     if (-not $p.WaitForExit(1800000)) {
         Log "claude attempt $attempt TIMED OUT after 30 min - killing process tree"
